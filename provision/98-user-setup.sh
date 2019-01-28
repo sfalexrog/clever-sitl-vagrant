@@ -15,15 +15,12 @@ Version=1.0
 
 Name=jMAVSim SITL
 GenericName=jMAVSim SITL
-Comment=Jot down notes for later
+Comment=Run PX4 with a lightweight simulation
 
-TryExec=/scripts/start_gui.sh
-Exec=/scripts/start_gui.sh
+TryExec=/home/vagrant/scripts/start_gui.sh
+Exec=/home/vagrant/scripts/start_gui.sh
 Terminal=true
 Icon=openjdk-8
-
-StartupNotify=true
-StartupWMClass=xpad
 
 Type=Application
 Categories=GTK;Utility;

@@ -79,6 +79,10 @@ Vagrant.configure("2") do |config|
   config.vm.provision "file",
     source: "provision",
     destination: "provision"
+  
+  config.vm.provision "file",
+    source: "scripts",
+    destination: "/home/vagrant/scripts"
 
   config.vm.provision "shell", 
     privileged: false,

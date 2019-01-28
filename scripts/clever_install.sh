@@ -23,7 +23,8 @@ rosdep install -y --from-paths src --ignore-src -r
 catkin_make
 
 # A workaround for VL53L1X being a RPi-only package :(
-(xargs -a $CATKIN_WS/src/clever/requirements.txt -n 1 pip install --user || true)
+# TODO: fix Python packages installation (or just don't install them altogether)
+# (xargs -a $CATKIN_WS/src/clever/requirements.txt -n 1 pip install --user || true)
 
 # GeographicLib needs to be installed as well
 sudo /opt/ros/$ROS_DISTRO/lib/mavros/install_geographiclib_datasets.sh
